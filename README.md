@@ -1,9 +1,9 @@
 # GreatestNumber from Codewars
 
-User gives a string, and the programm should pick up the greatest number from it.
+User gives a string, and the programm should pick up the largest number from it.
 
 Like this:
 
-Enter the string :qq23sss345ddd2q
+Enter the string :qq23sss345ddd2qdddddddddddss4aaa
 
-The greatest number in the string is 345
+The largest number in the string is 345
