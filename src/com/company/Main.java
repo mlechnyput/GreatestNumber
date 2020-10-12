@@ -20,14 +20,16 @@ public class Main {
         for (int i = 0; i < str.length(); i++) {
             if (Character.isDigit(str.charAt(i))) {
                 strNum += str.charAt(i);
-                if (!Character.isDigit(str.charAt(i + 1))) {
+
+                if (i == str.length() - 1) v.addElement(Integer.parseInt(strNum));
+                else if (!Character.isDigit(str.charAt(i + 1))) {
                     v.addElement(Integer.parseInt(strNum));
-                    strNum="";
+                    strNum = "";
                 }
             }
         }
         arr = v.toArray();
         Arrays.sort(arr);
-        System.out.print("The greatest number in the string is "+arr[arr.length-1]);
+        System.out.print("The greatest number in the string is " + arr[arr.length - 1]);
     }
 }
